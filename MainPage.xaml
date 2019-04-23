@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Converter;assembly=Converter"
+             x:Class="Converter.MainPage"
+             BackgroundColor="#071013"
+             NavigationPage.HasNavigationBar="false">
+    <Grid RowSpacing="10">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label
+            Grid.Row="1"
+            Text="Measure"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+            FontSize="50"
+            TextColor="#E6E8E6"
+            />
+        <Label
+            Grid.Row="2"
+            Text="Converter"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+            FontSize="50"
+            TextColor="#E6E8E6"/>
+        <Label
+            Grid.Row="4"
+            Text="Chose one"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+            FontSize="20"
+            TextColor="#E6E8E6"/>
+        <Button
+            Grid.Row="5"
+            x:Name="LengthButton"
+            ClassId="Length"
+            Text="Length"
+            FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+            FontSize="40"
+            TextColor="#071013"
+            BackgroundColor="#A8A9A8"
+            HeightRequest="60"
+            WidthRequest="220"
+            BorderRadius="5"
+            Padding="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="6"
+            x:Name="VolumeButton"
+            ClassId="Volume"
+            Text="Volume"
+            FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+            FontSize="40"
+            TextColor="#071013"
+            BackgroundColor="#A8A9A8"
+            HeightRequest="60"
+            WidthRequest="220"
+            BorderRadius="5"
+            Padding="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="7"
+            x:Name="AreaButton"
+            ClassId="Area"
+            Text="Area"
+            FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+            FontSize="40"
+            TextColor="#071013"
+            BackgroundColor="#A8A9A8"
+            HeightRequest="60"
+            WidthRequest="220"
+            BorderRadius="5"
+            Padding="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked"
+            />
+        <Button
+            Grid.Row="8"
+            x:Name="DecButton"
+            ClassId="Decimal"
+            Text="HEX, ETC"
+            FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+            FontSize="40"
+            TextColor="#071013"
+            BackgroundColor="#A8A9A8"
+            HeightRequest="60"
+            WidthRequest="220"
+            BorderRadius="5"
+            Padding="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Button_Clicked"/>
+    </Grid>
+   
+
+</ContentPage>

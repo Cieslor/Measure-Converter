@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Converter;assembly=Converter"
+             x:Class="Converter.LengthPage"
+             BackgroundColor="#071013"
+             >
+    <ContentPage.Content>
+        <Grid Padding="0,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout
+                Grid.Row="0">
+                <Label
+                Text="Fill in one"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="25"
+                TextColor="#E6E8E6"/>
+                <Label
+                Text="of the boxes"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="25"
+                TextColor="#E6E8E6"/>
+            </StackLayout>
+            <StackLayout
+                Grid.Row="1">
+                <Label
+                Text="Centimeters"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="20"
+                TextColor="#939493"
+                Margin="0,0,0,5"/>
+                <Frame
+                BackgroundColor="#1C1C1C"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="250"
+                CornerRadius="5"
+                Padding="0,0,0,0">
+                    <local:CustomEntry
+                        x:Name="Centimeters"
+                        TextColor="#E6E8E6"
+                        FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                        FontSize="30"
+                        HorizontalOptions="Center"
+                        WidthRequest="220"
+                        HeightRequest="50"
+                        Placeholder="cm"
+                        PlaceholderColor="#939493"
+                        Keyboard="Numeric"
+                        Completed="Centimeters_Completed"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                Grid.Row="2">
+                <Label
+                Text="Meters"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="20"
+                TextColor="#939493"
+                Margin="0,0,0,5"/>
+                <Frame
+                BackgroundColor="#1C1C1C"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="250"
+                CornerRadius="5"
+                Padding="0,0,0,0">
+                    <local:CustomEntry
+                        x:Name="Meters"
+                        TextColor="#E6E8E6"
+                        FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                        FontSize="30"
+                        HorizontalOptions="Center"
+                        WidthRequest="220"
+                        HeightRequest="50"
+                        Placeholder="m"
+                        PlaceholderColor="#939493"
+                        Keyboard="Numeric"
+                        Completed="Meters_Completed"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                Grid.Row="3">
+                <Label
+                Text="Kilometers"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="20"
+                TextColor="#939493"
+                Margin="0,0,0,5"/>
+                <Frame
+                BackgroundColor="#1C1C1C"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="250"
+                CornerRadius="5"
+                Padding="0,0,0,0">
+                    <local:CustomEntry
+                        x:Name="Kilometers"
+                        TextColor="#E6E8E6"
+                        FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                        FontSize="30"
+                        HorizontalOptions="Center"
+                        WidthRequest="220"
+                        HeightRequest="50"
+                        Placeholder="km"
+                        PlaceholderColor="#939493"
+                        Keyboard="Numeric"
+                        Completed="Kilometers_Completed"
+                    />
+                </Frame>
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

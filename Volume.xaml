@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Converter;assembly=Converter"
+             BackgroundColor="#071013"
+             x:Class="Converter.Volume">
+    <ContentPage.Content>
+        <Grid Padding="0,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackLayout
+                Grid.Row="0">
+                <Label
+                Text="Fill in one"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="25"
+                TextColor="#E6E8E6"/>
+                <Label
+                Text="of the boxes"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="25"
+                TextColor="#E6E8E6"/>
+            </StackLayout>
+            <StackLayout
+                Grid.Row="1">
+                <Label
+                Text="Cubic Dezimeters / Litres"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="20"
+                TextColor="#939493"
+                Margin="0,0,0,5"/>
+                <Frame
+                BackgroundColor="#1C1C1C"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="250"
+                CornerRadius="5"
+                Padding="0,0,0,0">
+                    <local:CustomEntry
+                        x:Name="CubicDezimeters"
+                        TextColor="#E6E8E6"
+                        FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                        FontSize="30"
+                        HorizontalOptions="Center"
+                        WidthRequest="220"
+                        HeightRequest="50"
+                        
+                        PlaceholderColor="#939493"
+                        Keyboard="Numeric"
+                        Completed="CubicDezimeters_Completed"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                Grid.Row="2">
+                <Label
+                Text="Cubic Centimeters"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="20"
+                TextColor="#939493"
+                Margin="0,0,0,5"/>
+                <Frame
+                BackgroundColor="#1C1C1C"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="250"
+                CornerRadius="5"
+                Padding="0,0,0,0">
+                    <local:CustomEntry
+                        x:Name="CubicCentimeters"
+                        TextColor="#E6E8E6"
+                        FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                        FontSize="30"
+                        HorizontalOptions="Center"
+                        WidthRequest="220"
+                        HeightRequest="50"
+                        
+                        PlaceholderColor="#939493"
+                        Keyboard="Numeric"
+                        Completed="CubicCentimeters_Completed"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout
+                Grid.Row="3">
+                <Label
+                Text="Cubic Meters"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                FontSize="20"
+                TextColor="#939493"
+                Margin="0,0,0,5"/>
+                <Frame
+                BackgroundColor="#1C1C1C"
+                HorizontalOptions="Center"
+                HeightRequest="50"
+                WidthRequest="250"
+                CornerRadius="5"
+                Padding="0,0,0,0">
+                    <local:CustomEntry
+                        x:Name="CubicMeters"
+                        TextColor="#E6E8E6"
+                        FontFamily="LilitaOne-Regular.ttf#LilitaOne-Regular"
+                        FontSize="30"
+                        HorizontalOptions="Center"
+                        WidthRequest="220"
+                        HeightRequest="50"
+                        
+                        PlaceholderColor="#939493"
+                        Keyboard="Numeric"
+                        Completed="CubicMeters_Completed"
+                    />
+                </Frame>
+            </StackLayout>
+        </Grid>
+       
+    </ContentPage.Content>
+</ContentPage>
